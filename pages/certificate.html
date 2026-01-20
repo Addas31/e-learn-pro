@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Certificate | E-Learn Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="dashboard-body">
+
+<div class="dashboard-layout">
+
+  <aside class="sidebar">
+    <h2 class="logo">E-Learn<span>Pro</span></h2>
+    <nav>
+      <a href="dashboard.html">⬅ Back to Dashboard</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+    <h2 class="section-title">Your Certificate</h2>
+
+    <div class="certificate-card" id="certificate">
+      <h1>Certificate of Completion</h1>
+      <p>This is to certify that</p>
+      <h2 id="certName">Student Name</h2>
+      <p>has successfully completed the</p>
+      <h3 id="certCourse">Web Development Course</h3>
+      <p>at E-Learn Pro</p>
+      <p class="cert-date" id="certDate"></p>
+    </div>
+
+    <button class="course-btn big-btn" onclick="downloadCertificate()">
+      ⬇ Download Certificate
+    </button>
+
+  </main>
+
+</div>
+
+<script src="../js/app.js"></script>
+</body>
+</html>

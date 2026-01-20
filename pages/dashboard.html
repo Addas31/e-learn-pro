@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | E-Learn Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="css/dark.css">
+<script src="js/theme.js" defer></script>
+
+</head>
+<body class="dashboard-body">
+
+<div class="dashboard-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="logo">E-Learn<span>Pro</span></h2>
+    <nav>
+      <a href="../index.html">🏠 Home</a>
+      <a href="#" class="active">📊 Dashboard</a>
+      <a href="profile.html">👤 Profile</a>
+      <a href="../login.html" onclick="logout()">🚪 Logout</a>
+      <button class="theme-btn" onclick="toggleTheme()">🌓 Theme</button>
+
+  </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <h1 id="welcomeText" class="dash-title">Welcome 👋</h1>
+
+    <!-- STATS -->
+    <div class="stats-grid">
+
+      <div class="stat-card purple">
+        <h3>Courses Enrolled</h3>
+        <p id="enrolledCount">3</p>
+      </div>
+
+      <div class="stat-card green">
+        <h3>Courses Completed</h3>
+        <p id="completedCount">1</p>
+      </div>
+
+      <div class="stat-card blue">
+        <h3>Overall Progress</h3>
+        <p id="overallProgress">45%</p>
+      </div>
+
+    </div>
+
+    <!-- COURSES -->
+    <h2 class="section-title">Achievements</h2>
+
+<div class="badge-grid" id="badgeGrid"></div>
+<h2 class="section-title">Progress Analytics</h2>
+
+<div class="chart-box">
+  <canvas id="progressChart"></canvas>
+</div>
+
+
+      <div class="course-card glow-purple">
+        <h3>Web Development</h3>
+        <div class="progress-bar">
+          <div class="progress-fill fill-purple" id="webProgress"></div>
+        </div>
+        <span id="webPercent">60%</span>
+        <button onclick="openCourse('web')" class="course-btn">Continue</button>
+      </div>
+
+      <div class="course-card glow-green">
+        <h3>Python Programming</h3>
+        <div class="progress-bar">
+          <div class="progress-fill fill-green" id="pythonProgress"></div>
+        </div>
+        <span id="pythonPercent">30%</span>
+        <button onclick="openCourse('python')" class="course-btn">Continue</button>
+      </div>
+
+      <div class="course-card glow-blue">
+        <h3>UI/UX Design</h3>
+        <div class="progress-bar">
+          <div class="progress-fill fill-blue" id="uiProgress"></div>
+        </div>
+        <span id="uiPercent">15%</span>
+        <button onclick="openCourse('ui')" class="course-btn">Continue</button>
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="../js/progress.js"></script>
+</body>
+</html>

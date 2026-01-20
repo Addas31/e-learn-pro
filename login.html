@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | E-Learn Pro</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="auth-body">
+
+<div class="auth-container">
+  <h2 id="formTitle">Login</h2>
+
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+
+  <button onclick="handleAuth()" class="primary-btn">Submit</button>
+
+  <p class="toggle-text">
+    Don’t have an account?
+    <span onclick="toggleForm()">Sign up</span>
+  </p>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

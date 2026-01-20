@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Player | E-Learn Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/dark.css">
+<script src="js/theme.js" defer></script>
+
+</head>
+<body class="dashboard-body">
+
+<div class="dashboard-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="logo">E-Learn<span>Pro</span></h2>
+    <nav>
+      <a href="dashboard.html">⬅ Back to Dashboard</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <h2 id="courseTitle" class="course-title"></h2>
+
+    <!-- VIDEO BOX -->
+    <div class="video-frame">
+      <iframe 
+        id="courseVideo"
+        src=""
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <button class="course-btn big-btn" onclick="markCompleted()">
+  ✔ Mark Lesson Completed
+</button>
+
+<button class="course-btn big-btn" id="certBtn" style="display:none"
+        onclick="window.location.href='certificate.html'">
+  🎓 Get Certificate
+</button>
+
+
+    <h3 class="section-title">Lessons</h3>
+
+    <ul class="lesson-list" id="lessonList"></ul>
+
+  </main>
+
+</div>
+
+<script src="../js/progress.js"></script>
+</body>
+</html>

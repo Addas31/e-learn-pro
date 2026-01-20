@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile | E-Learn Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="dashboard-body">
+
+<div class="dashboard-layout">
+
+  <aside class="sidebar">
+    <h2 class="logo">E-Learn<span>Pro</span></h2>
+    <nav>
+      <a href="dashboard.html">⬅ Back</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+    <h2 class="section-title">My Profile</h2>
+
+    <div class="profile-card">
+      <h3 id="profileName"></h3>
+      <p>Email: user@example.com</p>
+      <p>Courses Enrolled: 3</p>
+      <p>Certificates Earned: 1</p>
+    </div>
+
+  </main>
+
+</div>
+
+<script>
+  document.getElementById("profileName").innerText =
+    localStorage.getItem("user") || "Student";
+</script>
+
+</body>
+</html>

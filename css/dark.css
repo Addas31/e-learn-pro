@@ -1,0 +1,12 @@
+body.dark-mode {
+  background: linear-gradient(135deg, #020617, #020617);
+  color: white;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .course-card,
+body.dark-mode .stat-card,
+body.dark-mode .lesson-list li {
+  background: linear-gradient(135deg, #020617, #020617);
+  color: white;
+}
